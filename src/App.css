@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #293264;
+}
+
+#app,
+#app > div,
+.answers {
+  display: flex;
+}
+
+#app,
+#app > div {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  min-height: 100vh;
+  background: #f5f7fb;
+  background-image: url(./img/blob-cyan.png), url(./img/blob-yellow.png);
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
+  background-attachment: fixed;
+}
+
+#app > div {
+  width: 100%;
+  margin: 20px 0;
+}
+
+h1,
+h3 {
+  font-family: "Karla";
+  font-weight: 700;
+  color: #293264;
+}
+
+h1 {
+  font-size: 3.1rem;
+  line-height: 3.7rem;
+  margin: 15px 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+button {
+  background: #4d5b9d;
+  border: none;
+  font-family: "Inter";
+  color: #f5f7fb;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(230, 34%, 53%);
+}
+
+button#start-quiz {
+  width: 193px;
+  height: 52px;
+  border-radius: 15px;
+  margin: 30px 0;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+#start {
+  text-align: center;
+}
+
+.questions {
+  width: 70%;
+  margin: 0 0 15px;
+  border-bottom: solid #dbdef0;
+}
+
+.answers {
+  margin: 12px 0 15px;
+}
+
+.answers > button,
+button.check-restart {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.answers > button {
+  border: solid #4d5b9e;
+  border-radius: 8px;
+  padding: 5px 15px;
+  margin-right: 4%;
+  max-width: 22%;
+  color: #293264;
+  background: none;
+  overflow-wrap: break-word;
+}
+
+.answers > button:last-child {
+  margin-right: 0;
+}
+
+button.check-restart {
+  padding: 11px 22px;
+  border-radius: 10px;
+  margin: 5px 20px 0;
+}
+
+span#score {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .questions {
+    width: 40%;
+  }
+}
